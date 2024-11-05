@@ -10,7 +10,7 @@
 
 #pragma once
 
-#ifdef _MSC_VER
+#ifdef _WIN32
 
 // mingw-w64 tends to define it as 0x0502 in its headers.
 #undef _WIN32_WINNT
@@ -40,7 +40,7 @@
 #define VC_EXTRALEAN 1
 #define NONAMELESSSTRUCT 1
 
-#include <ObjIdl.h>
+#include <objidl.h>
 #include <atlbase.h> // atlbase.h needs to come before strsafe.h
 #include <intsafe.h>
 #include <strsafe.h>
